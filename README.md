@@ -13,7 +13,7 @@ Topojson format is the default choice due to its size advantage. But can be easi
 | --- | --- |
 | India_pc_2019.topo.json | parliamentary constituencies orginal |
 | India_pc_2019_small.topo.json | parliamentary constituencies but smaller size |
-| India_States_2023.geo.json | States of India in geojson format |
+| India_States_2023.geo.json | States of India in geojson format converted from [shapefile][4] |
 | India_States_2023_Small.topo.json | States of India but smaller size in topojson format |
 | Manipur.topo.json | State of Manipur extracted from India_States_2023.geo.json |
 | Manipur-Small.topo.json | State of Manipur but smaller size |
@@ -23,7 +23,7 @@ Topojson format is the default choice due to its size advantage. But can be easi
 
 
 ## Simplification
-The source map is very large due to the details in the boundary. For simple representation where the accuracy of the boundary is not very critical, we can reduce the size of the map using [mapshaper][3].
+The source map is very large due to the details in the boundary. For simple representation where the accuracy of the boundary is not very critical, we can reduce the size of the map using [mapshaper online][3].
 Also note that Topojson size is smaller for the same level map detail when compared to geojson format.
 
 ### Smaller maps
@@ -54,5 +54,6 @@ mapshaper India_States_2023.geo.json -simplify dp 1%  -o Indian_States_dp.geo.js
 - [mapshaper][2] to convert between format, reduce map size and other map operations
 
 [1]: https://github.com/datameet/maps "datameet"
-[2]: https://mapshaper.org/ "mapshaper"
-[3]: https://github.com/datameet/maps/tree/master/States "Indian State Boundaries"
+[2]: https://github.com/mbloch/mapshaper "mapshaper"
+[3]: https://mapshaper.org/ "mapshaper online"
+[4]: https://github.com/datameet/maps/tree/master/States "Indian State Boundaries"
