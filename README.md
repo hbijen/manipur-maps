@@ -16,8 +16,8 @@ Topojson format is the default choice due to its size advantage. But can be easi
 | India_States_2023.geo.json | States of India in geojson format converted from [shapefile][4] |
 | India_States_2023_Small.topo.json | States of India but smaller size in topojson format |
 | Manipur.topo.json | State of Manipur extracted from India_States_2023.geo.json |
-| Manipur-Small.topo.json | State of Manipur but smaller size |
-| Manipur-AC.topo.json | assembly constituencies of Manipur |
+| Manipur_Small.topo.json | State of Manipur but smaller size |
+| Manipur_AC.topo.json | assembly constituencies of Manipur |
 | Manipur_PC_2019.topo.json | parliamentary constituencies of Manipur extracted from India_pc_2019.topo.json |
 | Manipur-division.topo.json | districts grouped as division for to track performance indicators |
 
